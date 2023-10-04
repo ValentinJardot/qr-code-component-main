@@ -1,0 +1,77 @@
+/* --- GLOBAL ---*/
+
+body {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Pour centrer par rapport à la hauteur de la fenêtre */
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* --- QR CODE COMPONENT --- */
+
+@media screen and (min-width: 375px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        border-radius: 1rem;
+    }
+    
+    .qr_img {
+        border-radius: 1rem;
+        margin: 0.8rem;
+    }
+    
+    .qr_title {
+        color: hsl(218, 44%, 22%);
+        margin: 0 0.8rem;
+    }
+    
+    .qr_text {
+    color: hsl(220, 15%, 55%);
+    margin: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        border-radius: 1rem;
+    }
+    
+    .qr_img {
+        border-radius: 1rem;
+        margin: 0.8rem;
+    }
+    
+    .qr_title {
+        color: hsl(218, 44%, 22%);
+        margin: 0 0.8rem;
+    }
+    
+    .qr_text {
+    color: hsl(220, 15%, 55%);
+    margin: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    }
+}
